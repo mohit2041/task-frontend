@@ -10,14 +10,16 @@
         <link rel="stylesheet" href="style.css">
         <script src="index.js"></script>
     </head>
-    <body>
+    <body class="p-3 mb-2 bg-danger text-white">
         <!-- navbar -->
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-            <i class="fa fa-desktop" aria-hidden="true"></i>
-            apli.ai
-            </a>
-        </nav>
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <nav class="navbar navbar-light bg-light justify-content-end align-items-center ">
+                <a class="navbar-brand" href="#">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                apli.ai
+                </a>
+            </nav>
+        </div>
 
         <!-- grid -->
         <div class="container mygrid">
@@ -25,13 +27,13 @@
             <!-- first row -->
             <div class="row myrow">
                 <!-- first column -->
-                <div class="col-sm-4 mycol">
+                <div class="col-sm-4 mycol col1 d-flex justify-content-center align-items-center">
 
                     <!-- profile photo with name -->
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="" alt="Card image cap">
+                        <img class="card-img-top" src="https://images.indianexpress.com/2020/08/scholarship-759.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">candidate</p>
+                            <p class="card-text text-white bg-dark">Alexandra Daddario</p>
                         </div>
                     </div>
                 </div>
@@ -39,19 +41,19 @@
                 <!-- second column -->
 
                 <!-- question part -->
-                <div class="col-sm-8 mycol" id="secondColumn">
+                <div class="col-sm-8 mycol col2 col21" id="secondColumn">
 
-                    <div class="row myrow d-flex align-items-stretch">
+                    <div class="row d-flex align-items-stretch">
         
                         <div class="col-sm-9 mycol">
 
                             <!-- question interface -->
-                            <div class="d-flex justify-content-around">
+                            <div class="d-flex justify-content-around btns">
                                 <div>
                                     <button type="button" class="btn btn-primary" onclick = "prevQuestion()"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
                                 </div>
                                 <div>
-                                    <h1 id="questionNumber">q1</h1>
+                                    <h1 id="questionNumber">Q1</h1>
                                 </div>
                                 <div>
                                     <button type="button" class="btn btn-primary" onclick = "nextQuestion()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
@@ -59,22 +61,22 @@
                             </div>
 
                             <!-- question in text -->
-                            <div class="d-flex justify-content-center">
-                                <p id="questionStatement">this is a question</p>
+                            <div class="d-flex justify-content-center questionText">
+                                <p id="questionStatement">tell me about yourself.</p>
                             </div>
 
                             <!-- soln vdo -->
-                            <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center align-items-end">
+                            <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center align-items-end vdo">
                                 <iframe class="embed-responsive-item" id="questionSolution" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"  allowfullscreen></iframe>
                             </div>         
                                     
                         </div>
 
                         <!-- comments and rating part -->
-                        <div class="col-sm-3 mycol">
+                        <div class="col-sm-3 mycol col22">
                             
                             <!-- star rating -->
-                            <div class = "d-flex justify-content-center align-items-center">
+                            <div class = "d-flex justify-content-center align-items-center rating">
                                 <span class="fa fa-star checked" id="star1"></span>
                                 <span class="fa fa-star checked" id="star2"></span>
                                 <span class="fa fa-star checked" id="star3"></span>
@@ -83,12 +85,12 @@
                             </div>
                             
                             <!-- comment -->
-                            <div class = "d-flex justify-content-center align-items-center">
+                            <div class = "d-flex justify-content-center align-items-center comment">
                                 <p id="comment">nice answer</p>
                             </div>
 
                             <!-- success btn -->
-                            <div class = "d-flex justify-content-end">
+                            <div class = "d-flex justify-content-end submitBtn">
                                 <button type="button" class="btn btn-success">Success</button>
                             </div>
 

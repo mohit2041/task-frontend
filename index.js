@@ -1,3 +1,4 @@
+// array of question object for static question data
 var questions = [
     {
       statement : "tell me about yourself.",
@@ -30,7 +31,7 @@ var questions = [
       comments : "satisfiable"
     },
 ]
-
+// fn for displaing star rating
 function rating(n){
     var stars = "";
     for(var i=0 ; i<n ; i++){
@@ -42,7 +43,7 @@ function rating(n){
 
     return stars;
 }
-
+// fn for displaying report on clicking nxt btn on 5th question
 function displayReport(){
 
     var table = "<table id='demo' style='width:100%'><tr><th>Question</th><th>Comments</th> <th>Star Rating</th></tr>";
@@ -53,7 +54,7 @@ function displayReport(){
     table += "</table";
     var col2 = document.getElementById("secondColumn").innerHTML = table;
 }
-
+// fn for prev Question
 function prevQuestion(){
 
     var no = (document.getElementById("questionNumber").innerHTML)[1]-'0';
@@ -67,6 +68,7 @@ function prevQuestion(){
 
     submitFields(no);
 }
+// fn for next question
 function nextQuestion(){
 
     var no = (document.getElementById("questionNumber").innerHTML)[1]-'0';
@@ -81,6 +83,7 @@ function nextQuestion(){
     submitFields(no);
 }
 
+// main fn for putting all fields of question object
 function submitFields(n){
 
     document.getElementById("questionNumber").innerHTML = "Q"+n;

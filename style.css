@@ -1,19 +1,39 @@
 .navbar{
-    border-bottom : 5px solid red;
+    border-bottom : 5px solid black;
  }
  .myrow{
-   /* border : 1px solid red; */
-   height : 500px;
-   
+   border : 1px solid #2b7840;;
+   margin: 20px;
+   padding: 20px;
  }
- .mycol{
-   /* border : 2px solid green; */
-   height : 500px;
+ .col1{
+  background-color:#07021a;
  }
- div{
-  /* border : 2px solid green; */
-  height: fit-content;
-}
+ .col2{
+   border: 1px solid #2b7840;
+   background-color: #28166e;
+ }
+ .vdo{
+  margin-top: 50px;
+ }
+ .btns, .questionText,.rating{
+  margin-top: 70px;
+  margin-bottom: 70px;
+ }
+ .comment{
+  margin-top: 90px;
+  margin-bottom: 70px;
+ }
+ .submitBtn{
+   margin-top: 50px;
+ }
 .checked{
-  color: orange;
+  color: black;
 }
+ .col21{
+  padding: 15px;
+ }
+ .col22{
+   padding: 15px;
+ }
+ 
