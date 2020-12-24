@@ -2,16 +2,16 @@
     border-bottom : 5px solid red;
  }
  .myrow{
-   border : 1px solid red;
+   /* border : 1px solid red; */
    height : 500px;
    
  }
  .mycol{
-   border : 2px solid green;
+   /* border : 2px solid green; */
    height : 500px;
  }
  div{
-  border : 2px solid green;
+  /* border : 2px solid green; */
   height: fit-content;
 }
 .checked{
